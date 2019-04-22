@@ -1,3 +1,15 @@
+def mystery_print(word):
+    for j in range(len(word)):
+        for k in range(j):
+            print(' ', end='')
+        print(word[j])
+
+mystery_print('hello')
+
+
+
+
+
 """
 This module lets you practice the WAIT-FOR-EVENT pattern.
 
@@ -30,18 +42,17 @@ Ultimately you should be comfortable with both approaches.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Zach Witonsky.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
-
 
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_until_prime_input()
-    run_test_next_prime()
-    run_test_prime_gap()
-    run_test_wait_for_sum_of_cubes()
+    # run_test_next_prime()
+    # run_test_prime_gap()
+    # run_test_wait_for_sum_of_cubes()
 
 
 def is_prime(n):
@@ -69,7 +80,6 @@ def is_prime(n):
     # Instead, ** CALL ** this function as needed in the problems below.
     # -------------------------------------------------------------------------
 
-
 def run_test_sum_until_prime_input():
     """ Tests the   wait_for_prime_input   function by calling it. """
     print()
@@ -78,7 +88,6 @@ def run_test_sum_until_prime_input():
     print('--------------------------------------------------')
 
     sum_until_prime_input()
-
 
 def sum_until_prime_input():
     """
